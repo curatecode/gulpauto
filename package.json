@@ -1,21 +1,21 @@
 {
-  "name": "interislandgroup",
+  "name": "gulpauto",
   "version": "1.0.0",
-  "description": "",
+  "description": "An automated gulp task to create a simple landing page",
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/curatecode/interislandgroup.git"
+    "url": "https://github.com/curatecode/gulpauto"
   },
-  "author": "wwn.la",
+  "author": "Wawan Zahari",
   "license": "ISC",
   "bugs": {
-    "url": "https://gitlab.com/curatecode/interislandgroup/issues"
+    "url": "https://github.com/curatecode/gulpauto/issues"
   },
-  "homepage": "https://gitlab.com/curatecode/interislandgroup#README",
+  "homepage": "https://github.com/curatecode/gulpauto#readme",
   "devDependencies": {
     "autoprefixer": "^8.0.0",
     "bootstrap": "^4.0.0",
