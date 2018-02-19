@@ -1,0 +1,25 @@
+extends ../../layouts/default_layout.pug
+
+block pageTitle
+  title ReadMe
+
+block pgContent
+  .container
+    .row
+      .col-12
+        h1.mt-5 ReadMe
+        
+        h5.mt-5 Creating sub pages
+        ol
+          li Create a new folder inside #[code="views"]. 
+          li Name the folder base on the sub page e.g. #[code="contact-us"]. 
+          li Create an #[code="index.pug"] file inside the folder and you're done!
+        
+        h5.mt-4 JS &amp; Bootstrap CSS dependency files
+        p JS files such as #[code="jquery.js"], #[code="popper.js"], and #[code="bootstrap.js"] has been automated from a #[code="gulpfile"] task. It will import and minify these files when you run #[code="gulp"] command. Same with Bootstrap CSS.
+
+        h5.mt-4 Final build for production
+        p Run #[code="gulp build"] once you're done with the development. This command will re-run the whole task in #[code="gulpfile.js"] to make sure all unused file is removed before it is ready for production.
+
+        h5.mt-4 What the PUG??
+        p Pug was formerly known as Jade. If you're not familiar with PugJS, please refer #[a(href="https://pugjs.org/", target="blank") here].
