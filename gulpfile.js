@@ -33,11 +33,11 @@ gulp.task('images', function() {
 })
 
 // JS Processing
-gulp.task('js', ['importjs'], function() {
+gulp.task('js', function() {
   var jsbuild = gulp.src(folder.src + 'assets/js/**/*')
     .pipe(deporder())
     .pipe(concat('main.min.js'))
-    .pipe(stripdebug())
+    // .pipe(stripdebug())
     .pipe(uglify());
 
   return jsbuild.pipe(gulp.dest(folder.build + 'assets/js/'));
@@ -59,7 +59,7 @@ gulp.task('importjs', function() {
 })
 
 // CSS Processing 
-gulp.task('css', ['images', 'bootstrap'], function() {
+gulp.task('css', ['images'], function() {
   var postCssOpts = [
     assets({ loadPaths: ['assets/images/'] }),
     autoprefixer({ browsers: ['last 2 versions', '> 2%'] }),
@@ -74,6 +74,7 @@ gulp.task('css', ['images', 'bootstrap'], function() {
       errLogToConsole: true
     }))
     .pipe(postcss(postCssOpts))
+    .pipe(rename('main.min.css'))
     .pipe(gulp.dest(folder.build + 'assets/css/'))
     .pipe(browserSync.stream());
 })
@@ -84,6 +85,7 @@ gulp.task('bootstrap', function() {
     .pipe(sass({
       outputStyle: 'compressed'
     }))
+    .pipe(rename('bootstrap.min.css'))
     .pipe(gulp.dest(folder.build + 'assets/css/'))
     .pipe(browserSync.stream());
 })
@@ -123,7 +125,7 @@ gulp.task('clean:build', function() {
 gulp.task('build', ['clean:build', 'run']);
 
 // Run all tasks
-gulp.task('run', ['views', 'images', 'css', 'js']);
+gulp.task('run', ['views', 'images', 'css', 'js', 'bootstrap', 'importjs']);
 
 // Default task
 gulp.task('default', ['run', 'watch']);
