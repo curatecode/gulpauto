@@ -35,7 +35,7 @@ The plugins used is what I believe to be among the most commonly used which incl
 * [gulp-sass](https://www.npmjs.com/package/gulp-sass)
 * [postcss-assets](https://www.npmjs.com/package/postcss-assets)
 * [autoprefixer](https://www.npmjs.com/package/autoprefixer)
-* [gulp-strip-debug](https://www.npmjs.com/package/gulp-strip-debug)
+* [gulp-strip-debug](https://www.npmjs.com/package/gulp-strip-debug) *(Currently commented out as some might find it a bit cumbersome)*
 * [gulp-uglify](https://www.npmjs.com/package/gulp-uglify)
 * [gulp-concat](https://www.npmjs.com/package/gulp-concat)
 * [gulp-deporder](https://www.npmjs.com/package/gulp-deporder)
@@ -47,4 +47,4 @@ The plugins used is what I believe to be among the most commonly used which incl
 * [jquery](https://www.npmjs.com/package/jquery) *(optional)*
 * [popper.js](https://www.npmjs.com/package/popper.js) *(optional)*
 
-***NOTE:*** Please familiarize yourself with [pugjs](https://pugjs.org) before using this!
+***PS:*** Please familiarize yourself with [pugjs](https://pugjs.org) before using this!
