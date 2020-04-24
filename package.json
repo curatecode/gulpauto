@@ -37,6 +37,7 @@
     "gulp-uglify": "^3.0.2",
     "jquery": "^3.5.0",
     "popper.js": "^1.16.1",
-    "postcss-assets": "^5.0.0"
+    "postcss-assets": "^5.0.0",
+    "acorn": ">=5.7.4"
   }
 }
