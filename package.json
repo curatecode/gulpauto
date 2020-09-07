@@ -8,7 +8,8 @@
     "preinstall": "npx npm-force-resolutions"
   },
   "resolutions": {
-    "yargs-parser": "^13.1.2"
+    "yargs-parser": "^13.1.2",
+    "bl": ">=2.2.1"
   },
   "repository": {
     "type": "git",
